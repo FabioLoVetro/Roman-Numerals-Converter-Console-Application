@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roman-Numerals-Converter-Console-Application", "Roman-Numerals-Converter-Console-Application\Roman-Numerals-Converter-Console-Application.csproj", "{727DAF8E-6058-4D49-AEA4-522B3C501618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roman-Numerals-Converter-Console-Application", "Roman-Numerals-Converter-Console-Application\Roman-Numerals-Converter-Console-Application.csproj", "{727DAF8E-6058-4D49-AEA4-522B3C501618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roman-Numerals-Converter-Console-Application.Tests", "Roman-Numerals-Converter-Console-Application.Tests\Roman-Numerals-Converter-Console-Application.Tests.csproj", "{A3030B07-1E11-4954-A8EA-55F9BFE314D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{727DAF8E-6058-4D49-AEA4-522B3C501618}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{727DAF8E-6058-4D49-AEA4-522B3C501618}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{727DAF8E-6058-4D49-AEA4-522B3C501618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3030B07-1E11-4954-A8EA-55F9BFE314D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3030B07-1E11-4954-A8EA-55F9BFE314D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3030B07-1E11-4954-A8EA-55F9BFE314D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3030B07-1E11-4954-A8EA-55F9BFE314D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

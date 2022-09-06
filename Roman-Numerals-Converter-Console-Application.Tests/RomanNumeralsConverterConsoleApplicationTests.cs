@@ -1,8 +1,7 @@
-﻿using NUnit.Framework;
-using FluentAssertions;
-using Exercises.Models;
+using NUnit.Framework;
 using System.Collections.Generic;
 using System;
+using Roman_Numerals_Converter_Console_Application;
 
 namespace Roman_Numerals_Converter_Console_Application.Tests
 {
