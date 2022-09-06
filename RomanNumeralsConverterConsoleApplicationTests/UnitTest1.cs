@@ -1,11 +1,10 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using System;
-using Roman_Numerals_Converter_Console_Application;
 
-namespace Roman_Numerals_Converter_Console_Application.Tests
+namespace RomanNumeralsConverterConsoleApplicationTests
 {
-    public class RomanNumeralsConverterConsoleApplicationTests
+    public class Tests
     {
         private Converter converter;
 
