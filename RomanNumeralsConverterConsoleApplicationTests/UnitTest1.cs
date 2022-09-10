@@ -52,19 +52,19 @@ namespace RomanNumeralsConverterConsoleApplicationTests
         }
 
         [Test]
-        public void transform_roman_numeral_to_number_should_return_10_for_CXLVI()
+        public void transform_roman_numeral_to_number_should_return_146_for_CXLVI()
         {
             converter.transform_roman_numeral_to_number("CXLVI").Should().Be(146);
         }
 
         [Test]
-        public void transform_roman_numeral_to_number_should_return_10_for_CDXCIV()
+        public void transform_roman_numeral_to_number_should_return_494_for_CDXCIV()
         {
             converter.transform_roman_numeral_to_number("CDXCIV").Should().Be(494);
         }
 
         [Test]
-        public void transform_roman_numeral_to_number_should_return_10_for_MMXVIII()
+        public void transform_roman_numeral_to_number_should_return_2018_for_MMXVIII()
         {
             converter.transform_roman_numeral_to_number("MMXVIII").Should().Be(2018);
         }
@@ -76,7 +76,7 @@ namespace RomanNumeralsConverterConsoleApplicationTests
         }
 
         [Test]
-        public void transform_roman_numeral_to_number_should_return_10_for_cdxciv()
+        public void transform_roman_numeral_to_number_should_return_494_for_cdxciv()
         {
             converter.transform_roman_numeral_to_number("cdxciv").Should().Be(494);
         }
