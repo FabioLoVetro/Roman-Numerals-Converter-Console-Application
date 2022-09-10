@@ -24,8 +24,6 @@ namespace Roman_Numerals_Converter_Console_Application
         {
             //print to video a message
             Console.WriteLine("Insert the roman numeral to convert");
-            //read the input
-            romanNumerals = Console.ReadLine().ToUpper();
             //convert the roman numeral
             Converter converter = new Converter();
             numero = converter.transform_roman_numeral_to_number(romanNumerals);

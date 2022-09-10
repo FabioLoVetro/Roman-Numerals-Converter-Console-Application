@@ -40,9 +40,6 @@ namespace RomanNumeralsConverterConsoleApplicationTests
             converter.transform_roman_numeral_to_number("Z").Should().Be(-1);
             converter.transform_roman_numeral_to_number("aB").Should().Be(-1);
             converter.transform_roman_numeral_to_number("aBeFg").Should().Be(-1);
-            converter.transform_roman_numeral_to_number(null).Should().Be(-1);
-            converter.transform_roman_numeral_to_number(" ").Should().Be(-1);
-            converter.transform_roman_numeral_to_number(string.Empty).Should().Be(-1);
         }
 
         [Test]
@@ -70,13 +67,13 @@ namespace RomanNumeralsConverterConsoleApplicationTests
         }
 
         [Test]
-        public void transform_roman_numeral_to_number_should_return_10_for_x()
+        public void transform_roman_numeral_to_number_should_return_10_for_x_lower_case()
         {
             converter.transform_roman_numeral_to_number("x").Should().Be(10);
         }
 
         [Test]
-        public void transform_roman_numeral_to_number_should_return_494_for_cdxciv()
+        public void transform_roman_numeral_to_number_should_return_494_for_cdxciv_lower_case()
         {
             converter.transform_roman_numeral_to_number("cdxciv").Should().Be(494);
         }

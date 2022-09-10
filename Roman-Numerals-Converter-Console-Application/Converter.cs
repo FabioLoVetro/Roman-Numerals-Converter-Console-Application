@@ -17,8 +17,10 @@ namespace Roman_Numerals_Converter_Console_Application
         /// converts a roman numeral in number.
         /// if the convertion is not possible returns -1
         /// </summary>
-        public int transform_roman_numeral_to_number(String roman_numeral)
+        public int transform_roman_numeral_to_number(String romanNumerals)
         {
+            //read the input
+            romanNumerals = romanNumerals.ToUpper();
             var map = new Dictionary<Char, int>();
             map.Add('I', 1);
             map.Add('V', 5);
@@ -30,39 +32,39 @@ namespace Roman_Numerals_Converter_Console_Application
             int res = 0;
 
             //if is not a roman numeral return -1
-            foreach (char c in roman_numeral)
+            foreach (char c in romanNumerals)
             {
                 if (!map.ContainsKey(c)) return -1;
             }
             
-            if (roman_numeral.Length == 1)
+            if (romanNumerals.Length == 1)
             {
-                res = map[roman_numeral.ElementAt(0)];
+                res = map[romanNumerals.ElementAt(0)];
             }
             else
             {
-                for (int i = 0; i < roman_numeral.Length - 1; i += 1)
+                for (int i = 0; i < romanNumerals.Length - 1; i += 1)
                 {
-                    if (i == roman_numeral.Length - 2)
+                    if (i == romanNumerals.Length - 2)
                     {
-                        if (map[roman_numeral.ElementAt(i)] >= map[roman_numeral.ElementAt(i + 1)])
+                        if (map[romanNumerals.ElementAt(i)] >= map[romanNumerals.ElementAt(i + 1)])
                         {
-                            res += map[roman_numeral.ElementAt(i)] + map[roman_numeral.ElementAt(i + 1)];
+                            res += map[romanNumerals.ElementAt(i)] + map[romanNumerals.ElementAt(i + 1)];
                         }
                         else
                         {
-                            res += map[roman_numeral.ElementAt(i + 1)] - map[roman_numeral.ElementAt(i)];
+                            res += map[romanNumerals.ElementAt(i + 1)] - map[romanNumerals.ElementAt(i)];
                         }
                     }
                     else
                     {
-                        if (map[roman_numeral.ElementAt(i)] >= map[roman_numeral.ElementAt(i + 1)])
+                        if (map[romanNumerals.ElementAt(i)] >= map[romanNumerals.ElementAt(i + 1)])
                         {
-                            res += map[roman_numeral.ElementAt(i)];
+                            res += map[romanNumerals.ElementAt(i)];
                         }
                         else
                         {
-                            res += map[roman_numeral.ElementAt(i + 1)] - map[roman_numeral.ElementAt(i)];
+                            res += map[romanNumerals.ElementAt(i + 1)] - map[romanNumerals.ElementAt(i)];
                             i++;
                         }
                     }
