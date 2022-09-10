@@ -34,7 +34,6 @@ namespace RomanNumeralsConverterConsoleApplicationTests
             converter.transform_roman_numeral_to_number("S").Should().Be(-1);
             converter.transform_roman_numeral_to_number("t").Should().Be(-1);
             converter.transform_roman_numeral_to_number("U").Should().Be(-1);
-            converter.transform_roman_numeral_to_number("v").Should().Be(-1);
             converter.transform_roman_numeral_to_number("W").Should().Be(-1);
             converter.transform_roman_numeral_to_number("y").Should().Be(-1);
             converter.transform_roman_numeral_to_number("Z").Should().Be(-1);
