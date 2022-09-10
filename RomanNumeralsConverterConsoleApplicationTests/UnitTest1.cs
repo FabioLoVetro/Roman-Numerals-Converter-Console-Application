@@ -1,10 +1,11 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using System;
+using Roman_Numerals_Converter_Console_Application;
 
 namespace RomanNumeralsConverterConsoleApplicationTests
 {
-    public class Tests
+    public class UnitTest1
     {
         private Converter converter;
 
@@ -15,7 +16,7 @@ namespace RomanNumeralsConverterConsoleApplicationTests
         }
 
         [Test]
-        public void transform_roman_numeral_to_number_should_return_-1_for_letters_not_roman_numeral()
+        public void transform_roman_numeral_to_number_should_return_minus_one_for_letters_not_roman_numeral()
         {
             converter.transform_roman_numeral_to_number("a").Should().Be(-1);
             converter.transform_roman_numeral_to_number("B").Should().Be(-1);
